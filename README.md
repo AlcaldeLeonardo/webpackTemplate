@@ -21,7 +21,7 @@ npm install
 
 Tienes detallado en package.json los scripts disponibles.
 
-Para publicar el proyecto en GH Pages:
+### Para publicar el proyecto en GH Pages
 
 ```bash
 git subtree push --prefix dist origin gh-pages
