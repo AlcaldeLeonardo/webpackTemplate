@@ -26,3 +26,4 @@ Para publicar el proyecto en GH Pages:
 ```bash
 git subtree push --prefix dist origin gh-pages
 ```
+Tambien configura en github, de ser necesario si no se hizo en automatico, la rama gh-pages como rama en la seccion Settings > Pages > branch
