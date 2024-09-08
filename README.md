@@ -29,14 +29,15 @@ Para eliminar rastros de git y asi luego crear tus propios commit
 ejecuta en la raiz de tu proyecto:
 
 En bash:
+
 ```bash
 rm -rf .git
 ```
 
 En PoweShell:
 
-```poweshell
-Remove-Item -Recurse -Force .git 
+```powershell
+Remove-Item -Recurse -Force .git
 ```
 
 ### Para publicar el proyecto en GH Pages
@@ -44,6 +45,6 @@ Remove-Item -Recurse -Force .git
 ```bash
 git subtree push --prefix dist origin gh-pages
 ```
+
 Tambien configura en github, de ser necesario si no se hizo en automatico,
 la rama gh-pages como rama en la seccion Settings > Pages > branch
-
