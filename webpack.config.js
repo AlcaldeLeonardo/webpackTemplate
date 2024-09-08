@@ -10,6 +10,10 @@ module.exports = {
     clean: true
   },
 
+  devServer: {
+    static: './dist'
+  },
+
   module: {
     rules: [
       {
@@ -22,6 +26,21 @@ module.exports = {
         generator: {
           filename: 'img/[name][ext]'
         }
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[name][ext]'
+        }
+      },
+      {
+        test: /\.(csv|tsv)$/i,
+        use: ['csv-loader']
+      },
+      {
+        test: /\.xml$/i,
+        use: ['xml-loader']
       }
     ]
   },
