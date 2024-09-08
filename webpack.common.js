@@ -10,11 +10,6 @@ module.exports = {
     clean: true
   },
 
-  devServer: {
-    static: './dist',
-    hot: true
-  },
-
   module: {
     rules: [
       {
