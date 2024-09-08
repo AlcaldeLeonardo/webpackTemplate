@@ -31,7 +31,7 @@ ejecuta en la raiz de tu proyecto:
 En bash:
 
 ```bash
-rm -rf .git
+rm -rf .git && git init
 ```
 
 En PoweShell:
