@@ -39,3 +39,38 @@ En PoweShell:
 ```powershell
 Remove-Item -Recurse -Force .git
 ```
+
+# <<<<<<< HEAD
+
+### Para publicar el proyecto en GH Pages
+
+```bash
+git subtree push --prefix dist origin gh-pages
+```
+
+Tambien configura en github, de ser necesario si no se hizo en automatico,
+la rama gh-pages como rama en la seccion Settings > Pages > branch
+
+## Estructura del Proyecto
+
+```bash
+.
+├── package.json
+├── package-lock.json
+├── README.md
+├── src
+│   ├── assets
+│   │   └── favicon.jpeg
+│   ├── css
+│   │   ├── reset.css
+│   │   └── style.css
+│   ├── index.html
+│   └── scripts
+│       └── index.js
+├── webpack.common.js
+├── webpack.dev.js
+└── webpack.prod.js
+
+4 directories, 12 files
+
+```

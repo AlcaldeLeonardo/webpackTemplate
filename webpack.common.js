@@ -52,6 +52,5 @@ module.exports = {
       failOnError: true,
       overrideConfigFile: path.resolve(__dirname, '.eslintrc.json')
     })
-  ],
-  mode: 'development'
+  ]
 }
